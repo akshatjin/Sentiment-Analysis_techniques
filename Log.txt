@@ -1,0 +1,50 @@
+ing TensorFlow backend.
+Done loading data
+89356
+Vocab created
+Creating embeddings..................
+ 
+ Bag of Words is being built...
+ Tf-idf is being built...
+ Word2vec is being built...
+ Loading Word2Vec Model....
+ Word vectors loaded
+ Embedding being done,this might take a while :
+ Glove is being built...
+ Loading Glove Model......
+ Glove vectors loaded
+ Embedding being done,this might take a while :
+ Doc2Vec is being built...
+ Doc2Vec built
+ Naive Bayes =>
+ NaiveBayes + Bow : 81.896%
+ NaiveBayes + Tfidf : 85.04%
+ NaiveBayes + Word2vec : 71.944%
+ NaiveBayes + Word2vec-tfidf weight : 55.052%
+ NaiveBayes + Glove : 73.736%
+ NaiveBayes + Glove-tfidf weight : 51.672%
+ NaiveBayes + Doc2Vec : 86.272%
+ LogisticRegression =>
+ LogisticRegression + Bow : 86.86%
+ LogisticRegression + Tfidf : 82.868%
+ LogisticRegression + Word2vec : 84.476%
+ LogisticRegression + Word2vec-tfidf weight : 82.344%
+ LogisticRegression + Glove : 84.99600000000001%
+ LogisticRegression + Glove-tfidf weight : 81.99600000000001%
+ LogisticRegression + Doc2Vec : 88.064%
+ SVM =>
+ SVM + Bow : 74.504%
+ SVM + Tfidf : 51.300000000000004%
+ SVM + Word2vec : 70.172%
+ SVM + Word2vec-tfidf weight : 80.74799999999999%
+ SVM + Glove : 78.836%
+ SVM + Glove-tfidf weight : 82.06400000000001%
+ SVM + Doc2Vec : 88.16000000000001%
+ FeedForward Network =>
+ FFN + Bow : 85.428%
+ FFN + Tfidf : 85.252%
+ FFN + Word2vec : 84.536%
+ FFN + Word2vec-tfidf weight : 77.972%
+ FFN + Glove : 83.0%
+ FFN + Glove-tfidf weight : 80.972%
+
