@@ -117,12 +117,11 @@ def SVM(X,Y_train,Xtest,Y_test,met):
 
 def NN(X,Y_train,Xtest,Y_test,met):
 	nn = MLPClassifier(hidden_layer_sizes=(100,100),activation='relu',max_iter=250)
-	# nn.fit(X,Y_train)
-
-	# print("Saving NN model to file....")
-	# pickle_out = open("NeuralNet" + met + ".pickle","wb")
-	# pickle.dump(nn, pickle_out)
-	# pickle_out.close()
+	nn.fit(X,Y_train)
+	print("Saving NN model to file....")
+	pickle_out = open("NeuralNet" + met + ".pickle","wb")
+	pickle.dump(nn, pickle_out)
+	pickle_out.close()
 
 	print("Loading NN model...")
 	pickle_in = open("NeuralNet" + met + ".pickle","rb")
